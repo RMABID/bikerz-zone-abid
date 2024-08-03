@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+header{
+    background-color: #264653;
+}
+.menu-section{
+    width: 85%;
+    margin: 0 auto;
+}
+.nav-header{
+    display: flex;
+    justify-content: right;
+    /* padding-right: 16rem; */
+    gap: 6rem;
+    padding-top: 42px;
+    
+}
+.nav-links{
+    display: flex;
+    gap: 2.5rem;
+}
+.nav-links a{
+    font-weight: 500;
+    /* font-size: 16px; */
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+.nav-menu-btn{
+    display: none;
+}
+.nav-btns{
+    width: 91px;
+    height: 44px;
+    padding: 10px 24px;
+    border-radius: 5px;
+    background-color: rgb(231, 111, 81);
+    /* align-items: center; */
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* border: 1px solid red; */
+}
+.btn{
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(231, 111, 81);
+    cursor: pointer;
+}
+.honda-banner-section{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+
+}
+#honda-title{
+    width: 480px;
+    height: 25px;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(222, 222, 220);
+}
+.banner-container p{
+    width: 456px;
+    height: 72px;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(222, 222, 220);
+}
+.banner-container h1{
+    font-weight: 600;
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+}
+.banner-container button{
+    width: 168px;
+    height: 44px;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(231, 111, 81);
+}
+.banner-image img{
+    width: 552px;
+    height: 448px;
+}
+
+
+
+@media screen and (max-width:576px) {
+    .nav-header ul,
+    .nav-btns{
+        display: none;
+    }
+    .nav-menu-btn{
+        display: block;
+        font-size: 35px;
+        color: rgb(255, 255, 255);
+    }
+    .honda-banner-section{
+        flex-direction: column;
+    }
+    #honda-title{
+        width: 321px;
+        height: 44px;
+    }
+    .banner-container h1{
+        font-size: 35px;
+    }
+    .banner-container p{
+        width: 321px;
+        height: 120px;
+    }
+    .banner-container button{
+        margin-bottom: 25px;
+    }
+    .banner-image img{
+        width: 325px;
+        height: 265px;
+    }
+}
