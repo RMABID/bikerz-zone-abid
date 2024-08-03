@@ -190,6 +190,65 @@ header{
     border: 1px solid rgb(231, 111, 81);
 }
 
+
+.client-section-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+}
+.client-section-title h1{
+    width: 468px;
+    height: 72px;
+    margin: 0 auto;  
+    margin-top: 190px;     
+    margin-bottom: 50px;   
+    font-weight: 600;
+    font-size: 48px;
+    color: rgb(231, 111, 81);
+    align-items: center;
+}
+span{
+ color: rgb(10, 8, 38);
+}
+.client-card-image{
+    width: 322px;
+    height: 480px;
+    padding: 40px 35px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 0px;
+    /* border: 1px solid red; */
+}
+.client-card-image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px 0px;
+}
+.client-card-image p{
+    width: 252px;
+    height: 104px;
+}
+.client-card-image a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 85px;
+    color: rgb(35, 166, 240);
+   
+}
+
+
+svg{
+    width: 18px;
+    height: 18px;
+    margin-top: 15px;
+}
+
 @media screen and (max-width:576px) {
     .nav-header ul,
     .nav-btns{
@@ -238,4 +297,19 @@ header{
     }
     .lates-news-title h1{
         text-align: left;
+    }
+    .client-section-card{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .client-section-title h1{
+        width: 220px;
+        height: 108px;
+        font-size: 35px;
+        text-align: center;
+    }
+    .client-card-image p{
+        width: 252px;
+        height: 104px;
+        font-size: 16px;
+    }
 }
