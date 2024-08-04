@@ -25,7 +25,7 @@ header{
     background-color: #264653;
 }
 .menu-section{
-    width: 83%;
+    max-width: 85%;
     margin: 0 auto;
 }
 .nav-header{
@@ -298,7 +298,7 @@ footer{
     background-color: black;
 }
 .footer-section{
-    width: 85%;
+    max-width: 85%;
     margin: 0 auto;
     /* padding-top: 100px; */
     display: flex;
