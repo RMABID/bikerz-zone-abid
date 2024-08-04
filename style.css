@@ -25,7 +25,7 @@ header{
     background-color: #264653;
 }
 .menu-section{
-    width: 85%;
+    width: 83%;
     margin: 0 auto;
 }
 .nav-header{
@@ -206,11 +206,11 @@ header{
     margin-bottom: 50px;   
     font-weight: 600;
     font-size: 48px;
-    color: rgb(231, 111, 81);
+    color: rgb(10, 8, 38);
     align-items: center;
 }
 span{
- color: rgb(10, 8, 38);
+    color: rgb(231, 111, 81);
 }
 .client-card-image{
     width: 322px;
@@ -244,13 +244,97 @@ span{
     color: rgb(35, 166, 240);
    
 }
-
-
-svg{
-    width: 18px;
-    height: 18px;
-    margin-top: 15px;
+.frequently-questions-section h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    margin-top: 9rem;
 }
+
+
+.frequently-questions-image{
+    width: 432px;
+    height: 424px;
+    border: 3PX dotted rgb(189, 189, 189);
+    padding: 15px 1px 11.4px 6px;
+    
+}
+.frequently-questions-image img{
+    width: 420px;
+    height: 397px;
+}
+
+
+.frequently-questions-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7rem;
+}
+.frequently-questions-content{
+    width: 552px;
+    height: 203px;
+    padding: 20PX 24px;
+    box-shadow: 0px 0px 1px 0px;
+    border: none;
+}
+.frequently-questions-content p{
+    color: #000;
+}
+#info-1{
+    width: 504px;
+    height: 56px;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    box-shadow: 0px 0px 1px 0px;
+    color: rgb(56, 56, 56);
+}
+
+
+footer{
+    height: 280px;
+    margin-top: 50px;
+    background-color: black;
+}
+.footer-section{
+    width: 85%;
+    margin: 0 auto;
+    /* padding-top: 100px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-links button{
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    color: #FFFFFF;
+    background-color: black;
+}
+.footer-links ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+}
+.footer-links a,
+p{
+    color: rgb(255, 255, 255);
+
+}
+.app-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.app-links h1{
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 25px;
+    color: #FFFFFF;
+}
+
 
 @media screen and (max-width:576px) {
     .nav-header ul,
@@ -316,6 +400,60 @@ svg{
         font-size: 16px;
     }
     #star{
-        color: aqua;
+        color: rgb(255, 0, 43);
+    }
+
+    .frequently-questions-container{
+        flex-direction: column;
+    }
+    .frequently-questions-image,
+    .frequently-questions-image img{
+        width: 270px;
+        height: 252px;
+        border: none;
+    }
+    .frequently-questions-content{
+        width: 307px;
+        height: 220px;
+        margin-top: 50px;
+    }
+
+    #info-1{
+        width: 275px;
+
+    }
+    .frequently-questions-content p{
+        width: 275px;
+        height: 121px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .frequently-questions-section h1{
+        width: 305px;
+        height: 100px;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 150px;
+
+    }
+    .footer-section{
+        margin-top: 30px;
+        padding-top: 50px;
+        flex-direction: column;
+    }
+    .footer-links ul{
+        margin-top: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+    footer{
+        height: 500px;
+    }
+    .footer-links p{
+        display: none;
+    }
+    .app-links{
+        margin-right: 82px;
+        margin-top: 30px;
     }
 }
