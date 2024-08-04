@@ -232,6 +232,9 @@ span{
     width: 252px;
     height: 104px;
 }
+#star{
+    color: rgb(231, 124, 64);
+}
 .client-card-image a{
     text-decoration: none;
     display: flex;
@@ -311,5 +314,8 @@ svg{
         width: 252px;
         height: 104px;
         font-size: 16px;
+    }
+    #star{
+        color: aqua;
     }
 }
